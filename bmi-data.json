@@ -88,5 +88,11 @@
     "weight": "73",
     "bmi": "23.84",
     "gender": "Male"
+  },
+  {
+    "height": "157",
+    "weight": "65",
+    "bmi": "26.37",
+    "gender": "Female"
   }
 ]

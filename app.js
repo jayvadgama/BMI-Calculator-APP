@@ -1,5 +1,5 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
+const exphbs = require('hbs');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const port = process.env.PORT || 3000;
@@ -8,7 +8,6 @@ const app = express();
 
 
 // Set up handlebars as the view engine
-app.engine('hbs', exphbs.engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 // Middleware
