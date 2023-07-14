@@ -2,12 +2,13 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 const app = express();
-const port = 3000;
 
 
 // Set up handlebars as the view engine
+app.engine('hbs', exphbs.engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 // Middleware
