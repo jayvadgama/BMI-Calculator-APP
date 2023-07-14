@@ -23,9 +23,6 @@ jobs:
           webhook_secret: ${{secrets.DEPLOY_HOOK_KEY}}
         
         with:
-          node-version: "16"
-        
-        with:
           render-token: ${{secrets.RENDER_API_KEY}}
           github-token: ${{secrets.ACC_API_KEY}} # This is the GitHub token
           service-id: "srv-cioe9sdph6elhbscov8g" # This id is unique for each app
