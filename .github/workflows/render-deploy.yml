@@ -1,4 +1,5 @@
 # Script to deploy on the Render cloud platform
+#Pipeline that deploys to the Render cloud platform
 name: Node.js CI
 
 on:
@@ -8,13 +9,22 @@ on:
     branches: [main]
 jobs:
   build:
+
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+
+      - name: Invoke deployment hook
+        uses: distributors/workflow-webhook@v2
+        env: 
+          webhook_url: ${{secrets.DEPLOY_HOOK_URL}}
+          webhook_secret: ${{secrets.DEPLOY_HOOK_KEY}}
+        
         with:
           node-version: "16"
-      - uses: bounceapp/render-action@0.6.0
+        
         with:
           render-token: ${{secrets.RENDER_API_KEY}}
           github-token: ${{secrets.ACC_API_KEY}} # This is the GitHub token
