@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  
+  <style>
+    body {
+      font-family: SF Pro;
+      background-color: #0b0f1f;
+      color: #dededf;
+    }
+    .container {
+      height: 500px;
+      padding: 65px;
+      background-color: #1b1a2e;
+      border-radius: 21px;
+      width: 15%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .gender {
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    #labelMale, #labelFemale {
+      margin-left: -35px;
+    }
+    #male, #female {
+      height: 25px;
+      width: 25px;
+    }
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+    }
+    #height, #weight, #submit {
+      margin-top: 2%;
+      margin-bottom: 10%;
+      height: 40px;
+      width: 250px;
+      border: none;
+      border-radius: 10px;
+      background-color: whitesmoke;
+    }
+    #submit {
+      height: 45px;
+      background-color: #e7144c;
+      margin-top: 5%;
+      font-size: 16px;
+      color: whitesmoke
+    }
+    #submit:hover {
+      background-color: #e67a97;
+      cursor: pointer;
+    }
+    #form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2 {
+      font-size: 45px;
+      margin-bottom: 1%;
+      color: #dededfd7;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+      color: #dededfd7;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <form action="/calculate" method="POST" id="form">
+    
+      <h2>BMI Calculator</h2>
+      <p>Enter height and weight to calculate your <b>body mass index</b></p>
+      
+      <div class = "gender">
+
+        <input type="radio" name="gender" id="male" value="Male" required>
+        <label for="male" id="labelMale">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" required>
+        <label for="female" id="labelFemale">Female</label>
+
+      </div>
+    
+      <label for="height">Height (cm):</label>
+      <input type="number" name="height" id="height" required>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" name="weight" id="weight" required>
+
+      <button type="submit" id="submit">Calculate</button>
+    </form>
+  
+  </div>
+
+</body>
+</html>

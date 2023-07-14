@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Records History</title>
+  <style>
+    body {
+        font-family: SF Pro;
+        background-color: #0b0f1f;
+        color: #dededf;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-height: 600px; /* Set the desired height for the container */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    /* Hide the scrollbar */
+    .container::-webkit-scrollbar {
+        width: 0.5em;
+        background-color: transparent; /* Set the background color to match the container background */
+    }
+    .footer {
+        background-color: #0b0f1f;
+        height: 100px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #back {
+        height: 40px;
+        width: 250px;
+        background-color: #e7144c;
+        font-size: 16px;
+        border-radius: 10px;
+        color: whitesmoke;
+        border: none;
+    }
+    #back:hover {
+        background-color: #e67a97;
+        cursor: pointer;
+    }
+    table {
+        border-collapse: collapse;
+        width: 35%;
+        margin-top: 25px;
+    }
+
+    th, td {
+        border: 1px solid #1b1a2e;
+        padding: 8px;
+        text-align: center;
+    }
+    p {
+        text-align: center; 
+        color:gray
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center; margin-top: 50px">BMI Records History</h1>
+  <p>Total number of entries: <b>{{totalEntries}}</b></p>
+  <p>Average BMI : <b>{{meanBMI}}</b></p>
+  <div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Gender</th>
+            <th>Height (cm)</th>
+            <th>Weight (kg)</th>
+            <th>BMI</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each bmiHistory}}
+        <tr>
+            <td id = "userGender">  {{this.gender}}     </td>
+            <td id = "userHeight">  {{this.height}}     </td>
+            <td id = "userWeight">  {{this.weight}}     </td>
+            <td id = "userBMI">     {{this.bmi}}        </td>
+            <td id ="userStatus">   {{{this.status}}}   </td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <button type="submit" onClick="location='http://localhost:3000/'" id="back">Home</button>
+  </footer> 
+
+</body>
+</html>

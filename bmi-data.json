@@ -1,0 +1,92 @@
+[
+  {
+    "height": "165",
+    "weight": "80",
+    "bmi": "29.38",
+    "gender": "Male"
+  },
+  {
+    "height": "165",
+    "weight": "55",
+    "bmi": "20.20",
+    "gender": "Female"
+  },
+  {
+    "height": "175",
+    "weight": "60",
+    "bmi": "19.59",
+    "gender": "Female"
+  },
+  {
+    "height": "175",
+    "weight": "60",
+    "bmi": "19.59",
+    "gender": "Male"
+  },
+  {
+    "height": "154",
+    "weight": "60",
+    "bmi": "25.30",
+    "gender": "Male"
+  },
+  {
+    "height": "154",
+    "weight": "40",
+    "bmi": "16.87",
+    "gender": "Male"
+  },
+  {
+    "height": "184",
+    "weight": "40",
+    "bmi": "11.81",
+    "gender": "Male"
+  },
+  {
+    "height": "184",
+    "weight": "99",
+    "bmi": "29.24",
+    "gender": "Male"
+  },
+  {
+    "height": "184",
+    "weight": "156",
+    "bmi": "46.08",
+    "gender": "Male"
+  },
+  {
+    "height": "143",
+    "weight": "54",
+    "bmi": "26.41",
+    "gender": "Female"
+  },
+  {
+    "height": "143",
+    "weight": "40",
+    "bmi": "19.56",
+    "gender": "Female"
+  },
+  {
+    "height": "143",
+    "weight": "40",
+    "bmi": "19.56",
+    "gender": "Male"
+  },
+  {
+    "height": "156",
+    "weight": "55",
+    "bmi": "22.60",
+    "gender": "Male"
+  },
+  {
+    "height": "181",
+    "weight": "76",
+    "bmi": "23.20",
+    "gender": "Female"
+  },
+  {
+    "height": "175",
+    "weight": "73",
+    "bmi": "23.84",
+    "gender": "Male"
+  }
+]
