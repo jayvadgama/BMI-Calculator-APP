@@ -19,8 +19,8 @@ jobs:
       - name: Invoke deployment hook
         uses: distributors/workflow-webhook@v2
         env: 
-          webhook_url: ${{secrets.DEPLOY_HOOK_URL}}
-          webhook_secret: ${{secrets.DEPLOY_HOOK_KEY}}
+          webhook_url: "https://api.render.com/deploy/srv-cioe9sdph6elhbscov8g?key=oZBAi1wUPwU"
+          webhook secrets: "oZBAi1wUPwU"
         
         with:
           render-token: ${{secrets.RENDER_API_KEY}}
