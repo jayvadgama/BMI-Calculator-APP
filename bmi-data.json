@@ -94,5 +94,29 @@
     "weight": "65",
     "bmi": "26.37",
     "gender": "Female"
+  },
+  {
+    "height": "165",
+    "weight": "65",
+    "bmi": "23.88",
+    "gender": "Male"
+  },
+  {
+    "height": "145",
+    "weight": "45",
+    "bmi": "21.40",
+    "gender": "Female"
+  },
+  {
+    "height": "155",
+    "weight": "55",
+    "bmi": "22.89",
+    "gender": "Female"
+  },
+  {
+    "height": "156",
+    "weight": "77",
+    "bmi": "31.64",
+    "gender": "Male"
   }
 ]

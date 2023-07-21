@@ -67,6 +67,7 @@
     <table>
         <thead>
         <tr>
+            <th>Age</th>
             <th>Gender</th>
             <th>Height (cm)</th>
             <th>Weight (kg)</th>
@@ -77,11 +78,12 @@
         <tbody>
         {{#each bmiHistory}}
         <tr>
+            <td id = "userAge">     {{this.age}}        </td>
             <td id = "userGender">  {{this.gender}}     </td>
             <td id = "userHeight">  {{this.height}}     </td>
             <td id = "userWeight">  {{this.weight}}     </td>
             <td id = "userBMI">     {{this.bmi}}        </td>
-            <td id = "userStatus">   {{{this.status}}}   </td>
+            <td id = "userStatus">  {{{this.status}}}   </td>
         </tr>
         {{/each}}
         </tbody>

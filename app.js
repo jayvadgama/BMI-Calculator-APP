@@ -19,9 +19,9 @@ app.get('/', (req, res) => {
   });
 
   app.post('/calculate', (req, res) => {
-    const { height, weight, gender } = req.body;
+    const { height, weight, age, gender } = req.body;
     const bmi = calculateBMI(height, weight);
-    const bmiData = { height, weight, bmi, gender };
+    const bmiData = { height, weight, bmi, age, gender };
   
     // Load existing BMI data from the JSON file
     let bmiHistory = loadBmiData();
