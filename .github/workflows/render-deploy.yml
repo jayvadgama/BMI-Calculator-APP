@@ -8,8 +8,8 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  build:.github/workflows/render-deploy.yml
-
+  build:
+  
     runs-on: ubuntu-latest
     
     steps:
