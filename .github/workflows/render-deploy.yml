@@ -21,7 +21,8 @@ jobs:
         env: 
           webhook_url: "https://api.render.com/deploy/srv-cioe9sdph6elhbscov8g?key=oZBAi1wUPwU"
           webhook secrets: "oZBAi1wUPwU"
-        
+
+      - uses: bounceapp/render-action@0.6.0        
         with:
           render-token: ${{secrets.RENDER_API_KEY}}
           github-token: ${{secrets.ACC_API_KEY}} # This is the GitHub token
